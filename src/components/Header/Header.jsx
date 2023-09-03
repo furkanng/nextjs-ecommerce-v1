@@ -1,12 +1,39 @@
 import React from "react";
+import Link from "next/link";
+import { FiMail } from "react-icons/fi";
+
+import style from "./style.module.css";
 
 function Header() {
   return (
     <header>
-      <div className="bg-gray-200 max-h-20 overflow-hidden">
-        <div>
-          <div>Whatsapp Destek - 0850 000 0000</div>
+      <div className="container mx-auto py-1">
+        <div className={`flex justify-between items-center ${style.topNavbar}`}>
+          <div className="flex items-center">
+            <FiMail />
+            <Link href="mailto:someone@example.com" className="ml-1">
+              someone@example.com
+            </Link>
+          </div>
+
+          <div>
+            <div className="flex items-center">
+              <Link href="#" className="ml-1">
+                Sipariş Takibi
+              </Link>
+              <span className="ml-4">|</span>
+              <Link href="#" className="ml-1">
+                Sıkça Sorulan Sorular
+              </Link>
+              <span className="ml-4">|</span>
+              <Link href="#" className="ml-1">
+                İletişim
+              </Link>
+            </div>
+          </div>
         </div>
+
+        <div id="navbar"></div>
       </div>
     </header>
   );

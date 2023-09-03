@@ -1,10 +1,14 @@
 import "@/styles/reset.css";
 import "@/styles/globals.css";
-import { Mulish } from "next/font/google";
+import { Source_Code_Pro } from "next/font/google";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
-const mulish = Mulish({ subsets: ["latin"] });
+const sourceodePro = Source_Code_Pro({
+  weight: "300",
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Eticaret Sitesi",
@@ -13,9 +17,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="tr">
+    <html lang="tr" className={sourceodePro.className}>
       <Header />
-      <body className={mulish.className}>{children}</body>
+      <main>{children}</main>
       <Footer />
     </html>
   );
