@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Genel Stil Ayarları */
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Varsayılan arka plan rengi */
+    color: #333; /* Varsayılan metin rengi */
+}
+
+/* Global Container */
+.container {
+    max-width: 100%; /* İçeriği cihaz genişliğine uygun şekilde sınırla */
+    margin: 0 auto; /* İçeriği ortala */
+    padding: 1rem; /* Daha iyi mobil görünüm için içerik etrafına boşluk bırak */
+    box-sizing: border-box; /* Kutu modelini sıfırla */
+  }
+  
+  /* Daha küçük ekranlarda içeriği tam genişlikte göster */
+  @media (max-width: 640px) {
+    .container {
+      padding: 0.5rem; /* Daha küçük boşluklar */
+    }
+  }
