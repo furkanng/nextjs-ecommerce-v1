@@ -1,5 +1,9 @@
+.topNavbar {
+  background-color: red !important;
+}
+
 @media  (max-width: 640px) {
     .topNavbar {
-        display: none;
+        background-color: blue !important;
       }
 }

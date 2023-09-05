@@ -18,9 +18,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="tr" className={sourceodePro.className}>
-      <Header />
-      <main>{children}</main>
-      <Footer />
+      <body>
+        <Header />
+        <div>{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }
