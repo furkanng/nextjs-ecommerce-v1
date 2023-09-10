@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="tr" className={sourceodePro.className}>
-      <body>
+      <body className="container mx-auto">
         <Header />
         <div>{children}</div>
         <Footer />

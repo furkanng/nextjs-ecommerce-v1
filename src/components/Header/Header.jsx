@@ -3,11 +3,12 @@ import Link from "next/link";
 import { FiMail } from "react-icons/fi";
 
 import style from "./style.module.css";
+import Navbar from "../Navbar/Navbar";
 
 function Header() {
   return (
     <header>
-      <div className="container mx-auto py-1">
+      <div id="topNav" className="py-1">
         <div className={`flex justify-between items-center ${style.topNavbar}`}>
           <div className="flex items-center">
             <FiMail />
@@ -32,9 +33,8 @@ function Header() {
             </div>
           </div>
         </div>
-
-        <div id="navbar"></div>
       </div>
+      <Navbar />
     </header>
   );
 }

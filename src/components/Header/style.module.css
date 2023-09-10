@@ -1,9 +1,9 @@
-.topNavbar {
-  background-color: red !important;
+.topNavbar { /* media tagı çalışsın diye koydum. bi iş yapmıyor. */
+  display: flex;
 }
 
 @media  (max-width: 640px) {
     .topNavbar {
-        background-color: blue !important;
+        display: none !important;
       }
 }
