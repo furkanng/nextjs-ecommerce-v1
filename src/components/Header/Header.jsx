@@ -4,6 +4,7 @@ import { FiMail } from "react-icons/fi";
 
 import style from "./style.module.css";
 import Navbar from "../Navbar/Navbar";
+import Menu from "../Menu";
 
 function Header() {
   return (
