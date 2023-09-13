@@ -1,0 +1,6 @@
+.image {
+  border-color: transparent;
+}
+.image:hover {
+  border-color: black;
+}
