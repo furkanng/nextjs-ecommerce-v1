@@ -1,0 +1,9 @@
+@media (min-width: 1600px) {
+  .container {
+    max-width: 100%;
+  }
+  .navMenu {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+}

@@ -1,13 +1,14 @@
 import "@/styles/reset.css";
 import "@/styles/globals.css";
-import { Source_Code_Pro } from "next/font/google";
+import { Sora } from "next/font/google";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
 
-const sourceodePro = Source_Code_Pro({
-  weight: "300",
-  style: ["normal", "italic"],
-  subsets: ["latin"],
+const sourceodePro = Sora({
+  weight: "100",
+  style: "normal",
+  subsets: ["latin-ext"],
 });
 
 export const metadata = {
@@ -18,9 +19,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="tr" className={sourceodePro.className}>
-      <body className="container mx-auto">
-        <Header />
-        <div>{children}</div>
+      <body>
+        <div className="container mx-auto">
+          <Header />
+        </div>
+        <Navbar />
+        <div className="container mx-auto">{children}</div>
         <Footer />
       </body>
     </html>
