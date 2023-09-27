@@ -1,0 +1,11 @@
+@media (max-width: 640px) {
+  .navMenu {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 100%;
+  }
+}

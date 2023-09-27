@@ -14,7 +14,7 @@ function Navbar() {
         style={{ backgroundColor: "white" }}
         className={`container mx-auto ${style.container}`}
       >
-        <ul className={`flex flex-col lg:flex-row pt-4 ${style.navMenu}`}>
+        <ul className={`flex flex-col lg:flex-row pt-4 ${style.navbar}`}>
           <li className="flex-none">
             <div
               id="logo"
@@ -35,7 +35,7 @@ function Navbar() {
               }}
             />
           </li>
-          <li className="text-center flex-none mt-3 max-lg:mt-3 max-lg:ml-3">
+          <li className="text-center flex-none mt-3 max-lg:mt-3 max-lg:ml-3 mb-2">
             <div className="grid grid-cols-3 gap-2 lg:gap-4">
               <div className="grid justify-items-center">
                 <Link href="#">
